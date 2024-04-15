@@ -1,6 +1,6 @@
 import { ReactNode } from "react"
-import FluentLogo from "./Logo"
-import Wave from "./Wave"
+import FluentLogo from "../component/Logo"
+import Wave from "../component/Wave"
 import { headerFont } from "./fonts"
 
 export default function Page () {
