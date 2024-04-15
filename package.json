@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "pack": "cd out && zip -r out.zip .",
     "start": "next start",
     "lint": "next lint"
   },
