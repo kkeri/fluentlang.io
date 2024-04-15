@@ -101,6 +101,9 @@ export default function Page () {
           <UseCase title='M2M communication' icon={M2MCommunicationIcon}>
             Fluent programs naturally communicate via text streams.
           </UseCase>
+          <UseCase title='DSLs' icon={DSLsIcon}>
+            Create domain-specific languages for your applications.
+          </UseCase>
           <UseCase title='Portable logic' icon={PortableLogicIcon}>
             Write your application logic in Fluent and translate it to your
             implementation languages.
@@ -112,9 +115,6 @@ export default function Page () {
           <UseCase title='Persistent processes' icon={PersistentProcessesIcon}>
             Fluent programs can be paused and resumed.
             A paused program can be serialized to text and stored in a file or a database.
-          </UseCase>
-          <UseCase title='DSLs' icon={DSLsIcon}>
-            Create domain-specific languages for your applications.
           </UseCase>
         </div>
       </div>
