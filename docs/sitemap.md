@@ -25,6 +25,17 @@ Docs
 
 - Fluent syntax
 
+## Error handling
+
+- Syntax errors
+- Runtime errors
+- Signalling errors by quotation?
+  - including source location complicates and slows down the interpreter
+  - how to identify errors in the source code without source location?
+
+
+## Quotations
+
 
 
 ## Modules
@@ -69,6 +80,11 @@ Docs
 Tutorials
 =========
 
+
+## Working witn data structures
+
+
+
 ## How to write a Fluent interpreter
 
 Writing a basic interpreter for the Fluent language.
@@ -77,22 +93,50 @@ Writing a basic interpreter for the Fluent language.
 
 - Loading modules
 
-- Don't use resources directly
-  - Let the integration layer handle resources
+
+- Error handling
+
 
 
 ## Advanced interpreter techniques
 
+Writing production quality interpreters.
+
+Recommended functionality:
+- preemptive and non-preemptive mode
+
 - Optimizations
   - custom symbols
   - providing primitives for library functions
+  - an interpreter can perform arbitrary term rewriting
+- Quotations
+  - Quoations must be supported at least to the core language
 - Internal symbols
 - Garbage collection
 - Fast vs debuggable interpreters
+- Module loader
+  - Caching
+  - Provide separate module loader that handles module resolution
 - Security
 - Limiting resource usage
   - memory
   - CPU (preemptive scheduling, time slicing)
+- Don't access system resources directly (file system, network, time, etc.)
+  - Let the integration layer handle resources
+  - Benefits:
+    - increased portability
+    - avoids security vulnerabilities
+    - supports sandboxing 
+    - the interpreter can be tested in isolation
+
+
+In depth
+========
+
+## Building fluent syntax
+
+## Building a type system
+
 
 
 Interactive tutorials
