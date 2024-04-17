@@ -102,6 +102,9 @@ Writing a basic interpreter for the Fluent language.
 
 Writing production quality interpreters.
 
+-> Set up quality measures for implementations
+-> Create a test suite for conformance testing
+
 Recommended functionality:
 - preemptive and non-preemptive mode
 
