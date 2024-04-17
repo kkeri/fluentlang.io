@@ -1,20 +1,12 @@
 import { ReactNode } from "react"
-import FluentLogo from "../component/Logo"
-import Wave from "../component/Wave"
+import FluentLogo from "../components/Logo"
+import Wave from "../components/Wave"
 import { headerFont } from "./fonts"
 
 export default function Page () {
   return (
     <main className='flex flex-col items-stretch h-full'>
       <h1 className='hidden'>Fluent programming language</h1>
-
-      <div className='bg-amber-600 text-white white p-4 text-center'>
-        <h2 className='hidden'>
-          Disclaimer
-        </h2>
-        Fluent is under development and is not ready for use yet.
-        The website is gradually filled with content as the project moves forward.
-      </div>
 
       <div className='flex flex-col gap-10 bg-gray-950 items-center justify-center px-10 py-28'>
         <div className='w-40 h-40'>
@@ -89,7 +81,7 @@ export default function Page () {
       <div className='bg-gray-950
       flex flex-col gap-6 items-center justify-center p-12 md:p-20'>
         <div className='flex flex-col gap-12'>
-          <h2 className={`${headerFont.className} text-5xl font-normal mb-7 md:text-center text-gray-300`}>
+          <h2 className={`${headerFont.className} text-5xl font-normal mb-7 text-center text-gray-300`}>
             Application ideas
           </h2>
           <UseCase title='Task automation' icon={TaskAutomationIcon}>
